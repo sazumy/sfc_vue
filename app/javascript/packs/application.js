@@ -14,5 +14,20 @@
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+import 'babel-polyfill'
+import Vue from 'vue'
+import Vuex from 'vuex'
+import App from '../app.vue'
+// import store from './store1.js'
 
-console.log('Hello World from Webpacker')
+Vue.use(Vuex)
+require("babel-polyfill");
+Vue.config.productionTip = false
+
+document.addEventListener('DOMContentLoaded', () => {
+  new Vue({
+    el: '#app',
+    // store: store,
+    render: (h) => h(App)
+  })
+})
