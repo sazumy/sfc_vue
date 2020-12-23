@@ -3,9 +3,9 @@
     <Header msg="This is common header rendered by vue's single file components"></Header>
     <div id="nav">
     </div>
-    <!-- <router-link to="/">Page1</router-link> | -->
-    <!-- <router-link to="/page2">Page2</router-link> -->
-    <!-- <router-view/> -->
+    <router-link to="/">Page1</router-link> |
+    <router-link to="/page2">Page2</router-link>
+    <router-view/>
     <Footer msg="This is common footer rendered by vue's single file components"></Footer>
   </div>
 </template>
